@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>GLVSTN-24-SB-CCWL-1.kml</name>
+	<Style id="LineStyle20">
+		<LabelStyle>
+			<color>00000000</color>
+			<scale>0</scale>
+		</LabelStyle>
+		<LineStyle>
+			<color>ffa18d3f</color>
+			<width>3</width>
+		</LineStyle>
+		<PolyStyle>
+			<color>00000000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Placemark id="ID_20000">
+		<name>GLVSTN-24-SB-CCWL-1</name>
+		<Snippet maxLines="0"></Snippet>
+		<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PROJ_CODE</td>
+
+<td>PTUS-PJN003813</td>
+
+</tr>
+
+<tr>
+
+<td>INSP_TYPE</td>
+
+<td>Leak Detection</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_PLATFORM</td>
+
+<td>SB</td>
+
+</tr>
+
+<tr>
+
+<td>INSP_UNITS</td>
+
+<td>Imperial</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_DESC</td>
+
+<td>2024 SmartBall inspection of the 16,20, and 24-inch High-Density Polyethlene Canal Crossing Water Line for McCarthy Building Companies, Inc.</td>
+
+</tr>
+
+<tr>
+
+<td>INSP_START_DATE</td>
+
+<td>2024-05-30</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_END_DATE</td>
+
+<td>2024-06-01</td>
+
+</tr>
+
+<tr>
+
+<td>PROJ_MANAGER</td>
+
+<td>K. Johnson</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>RUN_NUM</td>
+
+<td>1</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PIPELINE_CODE</td>
+
+<td>CCWL</td>
+
+</tr>
+
+<tr>
+
+<td>EXPECTED_START_DATE</td>
+
+<td>2024-05-30</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REINSPECTION</td>
+
+<td>Initial Inspection</td>
+
+</tr>
+
+<tr>
+
+<td>SALES_MGR</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REPORT_PATH</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE</td>
+
+<td>Polyline</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_STATUS</td>
+
+<td>Complete</td>
+
+</tr>
+
+<tr>
+
+<td>SHAPE.STLength()</td>
+
+<td>1527.425297</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>REPORT_WEBLINK</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>HubClientID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>GlobalID</td>
+
+<td>{57C0366B-28FC-43B5-BD72-F7CFB91CE63F}</td>
+
+</tr>
+
+<tr>
+
+<td>LABEL</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:04 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:01:12 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>LENGTH_MI</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LENGTH_KM</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>Alignment_Complete</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+		<styleUrl>#LineStyle20</styleUrl>
+		<MultiGeometry>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-94.81657933740547,29.31823914116809,-27.46499999999651 -94.81583255982493,29.31837583363668,-27.46499999999651 -94.81542103710169,29.31710364567797,-27.46499999999651 -94.81557008377702,29.31706622298464,-27.46499999999651 -94.81564172531924,29.31704870689112,-27.46499999999651 -94.81597283894307,29.31551836064611,-27.46499999999651 -94.81621857398737,29.31434302373828,-26.66449999999895 -94.81625971503074,29.31434967067828,-26.63989999999467 -94.81638801960614,29.31437279319067,-26.56299999999464 -94.81642674238479,29.31438005343918,-26.61000000000058 -94.8164793486261,29.3143892068815,-26.61269999999786 -94.81649421933736,29.31434120965462,-26.61549999999988 -94.81678091755859,29.31332329294871,-26.67479999999341 -94.81719402401168,29.31201756763329,-26.75149999999849 -94.81735448018941,29.31149226117835,-26.78230000000622 -94.81749074204157,29.31075835975411,-26.82439999999769 -94.81753511073178,29.31027241228644,-26.85199999999895 -94.81750803910236,29.30953338936056,-26.89380000000529 -94.81745499358485,29.30903005410525,-26.92250000000058 -94.817255972732,29.30811062358257,-26.97539999999572 -94.81719399706219,29.30789898066591,-26.98780000000261 -94.81717911736781,29.30786240294634,-26.99000000000524 -94.81715924124386,29.3078201742485,-26.90099999999802 -94.81712726032143,29.30774255530421,-27.13300000000163 
+				</coordinates>
+			</LineString>
+		</MultiGeometry>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
+	</Placemark>
+</Document>
+</kml>

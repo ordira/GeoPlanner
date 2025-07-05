@@ -1,0 +1,1952 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>PD_22km_900mm_DI_EauDuPonant_fdl150724.kmz</name>
+	<open>1</open>
+	<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
+	<StyleMap id="msn_arrow">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_arrow</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_arrow</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_arrow0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_arrow0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_arrow0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_blue-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_blue-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_blue-pushpin0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-blank">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-blank2</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-blank</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-blank0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-blank0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-blank0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-blank1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-blank</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-blank1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-blank2">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-blank1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-blank2</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-square">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-square</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-square0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-square0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-square1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-square1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_grn-square1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_grn-square0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_grn-square</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin12">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin19</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin13">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin13</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin14">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin18</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin18</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin15">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin17</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin16">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin15</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin14</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin17">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin20</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin18">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin11</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin16</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin19">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin14</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin15</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin21">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin19</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin17</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ltblu-pushpin5">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ltblu-pushpin16</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ltblu-pushpin13</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-pushpin12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-pushpin9</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_red-pushpin71">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_red-pushpin101</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_red-pushpin100</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_wht-pushpin1">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_wht-pushpin1</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_wht-pushpin1</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin10">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin32</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin34</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin28">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin50</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin29</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin30">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin12</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin33</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin31">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin31</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin32</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin32">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin29</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin30</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="msn_ylw-pushpin9">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#sn_ylw-pushpin10</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#sh_ylw-pushpin10</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="sh_arrow">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_arrow0">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.4</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_blue-pushpin0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_grn-blank">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-blank0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-blank1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-blank2">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-square">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-square0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_grn-square1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin13">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin14">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin15">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin16">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin17">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin18">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin19">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin20">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ltblu-pushpin9">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_red-pushpin100">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_red-pushpin9">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_wht-pushpin1">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin29">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin30">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin32">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin33">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sh_ylw-pushpin34">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_arrow">
+		<IconStyle>
+			<color>ff00ff00</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_arrow0">
+		<IconStyle>
+			<color>ff00ffff</color>
+			<scale>1.2</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/shapes/arrow.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_blue-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/blue-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_grn-blank">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-blank0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-blank1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-blank2">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-blank-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-square">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-square0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_grn-square1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square.png</href>
+			</Icon>
+			<hotSpot x="32" y="1" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<ListStyle>
+			<ItemIcon>
+				<href>http://maps.google.com/mapfiles/kml/paddle/grn-square-lv.png</href>
+			</ItemIcon>
+		</ListStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin11">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin12">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin13">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin14">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin15">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin16">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin17">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin18">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ltblu-pushpin19">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ltblu-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_red-pushpin101">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_red-pushpin12">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/red-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_wht-pushpin1">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/wht-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin10">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+		<LineStyle>
+			<color>ff0000ff</color>
+			<width>5</width>
+		</LineStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin12">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin29">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin31">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin32">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="sn_ylw-pushpin50">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>PD_22km_900mm_DI_EauDuPonant_fdl150724</name>
+		<Placemark>
+			<name>900mm DIP</name>
+			<styleUrl>#msn_ylw-pushpin9</styleUrl>
+			<LineString>
+				<tessellate>1</tessellate>
+				<coordinates>
+					-4.219083589085565,48.46899886622523,0 -4.219141918273335,48.46895932498852,0 -4.219261966168579,48.46887415591403,0 -4.219614607104142,48.46873700202031,0 -4.220177776631214,48.46852278698456,0 -4.221135026497228,48.46775182765664,0 -4.224103317689238,48.46540287602294,0 -4.226775187958202,48.46335717600416,0 -4.22742270160825,48.46285086651456,0 -4.227857331816073,48.46266597473536,0 -4.228521518932061,48.46222823929609,0 -4.231442648136545,48.46104101019632,0 -4.233207790206545,48.46032586960925,0 -4.237196360420353,48.45807339018322,0 -4.237951494754586,48.45754823750661,0 -4.238754204600848,48.45691771257588,0 -4.240496335625709,48.45634574628304,0 -4.240539788878245,48.45633308132984,0 -4.242108354519509,48.4563212726002,0 -4.243559464763795,48.45647235048038,0 -4.244970852837938,48.45661209257851,0 -4.245288260457476,48.45675710268887,0 -4.245700128632771,48.45694807765022,0 -4.246021755653188,48.45709402135817,0 -4.246518675539816,48.4573298174628,0 -4.246939438849271,48.45752510712402,0 -4.247230827327138,48.4576597187387,0 -4.247770023783282,48.45790999879104,0 -4.248037062830346,48.4576797111805,0 -4.248448708273149,48.45731730838231,0 -4.249050566447988,48.45677762703798,0 -4.24969730022476,48.45618668120353,0 -4.250170555169443,48.45605555762985,0 -4.250470596442639,48.45597473161824,0 -4.250979040473287,48.45581738657566,0 -4.251101107750813,48.45577949315336,0 -4.251392924681284,48.45567633470188,0 -4.251692047013346,48.45557179458713,0 -4.252269360615751,48.45537320706617,0 -4.253167043304233,48.45506442433607,0 -4.254090571415149,48.45473846046657,0 -4.254724429781513,48.45452103310202,0 -4.255261594732714,48.45433338798492,0 -4.255568012020166,48.45436214265385,0 -4.256099729230318,48.45424735415475,0 -4.257444638841617,48.45401234148034,0 -4.258173316020183,48.45421224301488,0 -4.259145468669244,48.45392401364207,0 -4.259607170650501,48.45378916700508,0 -4.259601319449048,48.45338895132991,0 -4.259894226695105,48.45317565038747,0 -4.260268717422414,48.45303282649368,0 -4.261107968685919,48.45271295583105,0 -4.261458274650894,48.45258887129782,0 -4.262139514313446,48.45233159508251,0 -4.262900363794214,48.45204010705224,0 -4.263949156029073,48.45163183218828,0 -4.265156092391646,48.45116664125674,0 -4.265441218639437,48.45097162826642,0 -4.26559328027585,48.45086827170653,0 -4.266539311171761,48.45036127438086,0 -4.26743018478517,48.44989611412878,0 -4.269621865688463,48.4486564790279,0 -4.269887226229554,48.44849292514484,0 -4.273168084980959,48.44667013452083,0 -4.273646453942033,48.44641427636131,0 -4.27379107667837,48.44633633489562,0 -4.274368622937846,48.44601815455878,0 -4.27616080892583,48.44506084169183,0 -4.277523786252383,48.44433652864327,0 -4.279635040399262,48.44321002265454,0 -4.281269567459013,48.4421344446019,0 -4.281790743005373,48.44180069079411,0 -4.282774255452306,48.44114793686776,0 -4.283371280197338,48.4404879046057,0 -4.284105072305574,48.43978688678548,0 -4.285857226951677,48.43872159016126,0 -4.286537325616122,48.43834430379466,0 -4.287756856236111,48.43767327065578,0 -4.289151796079946,48.43701615910921,0 -4.289422140938726,48.43688918354845,0 -4.292202103904213,48.43558523795,0 -4.294671115396519,48.43489138687192,0 -4.295689149483549,48.43434509058277,0 -4.299777070490601,48.43152763834269,0 -4.302020313469552,48.43000336251158,0 -4.303753029414996,48.42909159793883,0 -4.304593014721028,48.42863599896057,0 -4.305644445085331,48.42807528303538,0 -4.305930586511455,48.42792308547738,0 -4.306131283483516,48.42781541740209,0 -4.306390816338773,48.42767298541477,0 -4.306837104354367,48.42743572279496,0 -4.307311345373991,48.427214624626,0 -4.307818562860552,48.42699638162182,0 -4.308325153176659,48.42679290064931,0 -4.308974479827676,48.42651870187767,0 -4.309966183286848,48.42612161459563,0 -4.311029974416764,48.42533814514217,0 -4.311655865237725,48.42487852608325,0 -4.312611609613176,48.42417281673623,0 -4.313841442459157,48.42323881999049,0 -4.314333678137635,48.42287583699358,0 -4.314447015539718,48.42285174299148,0 -4.315026845164573,48.42274588743212,0 -4.315429156216394,48.42257320107315,0 -4.316229582850598,48.42246542551646,0 -4.317270216015018,48.42232130480669,0 -4.319144955703248,48.42180023517646,0 -4.321712917938284,48.42109731574848,0 -4.326005043370574,48.41992670322551,0 -4.328769989738525,48.41915569757357,0 -4.330017503654985,48.41954005887693,0 -4.330071344549138,48.41953095913852,0 -4.330259108753943,48.41948484533744,0 -4.330526870881433,48.41927998919773,0 -4.330796893295491,48.4190779246446,0 -4.330787356055543,48.41902409001992,0 -4.330710920836229,48.41898300870463,0 -4.330789317467506,48.41892257700536,0 -4.331194638244458,48.4186046328308,0 -4.331988226163896,48.41797079940087,0 -4.333539698150539,48.41671113304898,0 -4.334044197477223,48.41653869050439,0 -4.335724889404834,48.41600014051873,0 -4.337133454987976,48.41554096491431,0 -4.339725395416762,48.41469866896009,0 -4.34053845469128,48.4144335406084,0 -4.344554619988377,48.41296490980702,0 -4.345240505252591,48.41269016471198,0 -4.348611286671638,48.41162615780443,0 -4.349000734041092,48.41163165275923,0 -4.351178642996542,48.41163859888039,0 -4.35252399643013,48.41165305880152,0 -4.3540058580265,48.41166830127911,0 -4.355656461030618,48.41169953882936,0 -4.35649756452643,48.4117088025161,0 -4.357231446197933,48.41172261625524,0 -4.357985468611391,48.41173342371113,0 -4.359429070643794,48.41166939673381,0 -4.361314929068236,48.41158457683024,0 -4.361840881691251,48.41152515183143,0 -4.364298597702826,48.41126263311387,0 -4.367716612856388,48.41095592768713,0 -4.370308966462017,48.41065993351399,0 -4.373187023040286,48.41061454142596,0 -4.375437833014778,48.41073676752848,0 -4.37600583605458,48.41077064703091,0 -4.37883839557289,48.41105059421228,0 -4.381054270974408,48.4108510375433,0 -4.381772517323375,48.41080622541982,0 -4.383448914195283,48.41062951729648,0 -4.384551589716476,48.4106055839281,0 -4.384649980105991,48.41046893595578,0 -4.384702228567368,48.41046697025446,0 -4.385282346224731,48.41038103206955,0 -4.38645187496734,48.41021265974495,0 -4.387599995430023,48.41036244468598,0 -4.387818993220884,48.41044840426978,0 -4.387911006182554,48.41041078902143,0 -4.388577063426244,48.41011887923602,0 -4.389443351796082,48.40974795011014,0 -4.390496151357931,48.40930454138971,0 -4.391950890284981,48.40868355564755,0 -4.393013242178387,48.40805012596442,0 -4.393721142475018,48.40761911157784,0 -4.393897985297044,48.40752772028147,0 -4.394126638305901,48.40741746634413,0 -4.394620541118789,48.40735379634035,0 -4.39540024181044,48.40698005205189,0 -4.396431092320943,48.40650357749505,0 -4.396450898550269,48.40643319706005,0 -4.39621470407641,48.40591085753577,0 -4.396218606889243,48.40585272130672,0 -4.396564517588796,48.40560973126323,0 -4.396975142142616,48.40532197422793,0 -4.397447748751234,48.40500692247121,0 -4.397708964323787,48.40482857648813,0 -4.398110285920401,48.40462702951437,0 -4.398684829062953,48.40433434329822,0 -4.399678542972351,48.40385268545408,0 -4.40026281476443,48.40356605047684,0 -4.400827555717342,48.40329075804647,0 -4.40206807456124,48.40280807866842,0 -4.403231572210865,48.40235808300937,0 -4.404345078908952,48.40194321173932,0 -4.405394569231429,48.40155559285704,0 -4.406554402552634,48.40112400845964,0 -4.408781782490106,48.40028752785897,0 -4.410354869016906,48.39970309767759,0 -4.411853460000192,48.39974478180211,0 -4.411979456018331,48.39973579501815,0 -4.413234559075566,48.39930879729139,0 -4.413849019690655,48.39906933413517,0 -4.41458281597563,48.39870683061201,0 -4.415584232182718,48.39866739880101,0 -4.415896773799256,48.39865119458231,0 -4.416361789433255,48.39864955638027,0 -4.416718051138682,48.3986445693539,0 -4.417394047504296,48.39866402161022,0 -4.418076885714751,48.39868709141807,0 -4.418437981959457,48.39870070634118,0 -4.41874164382425,48.39872258077761,0 -4.419323792649835,48.39877166137275,0 -4.419584476388771,48.398794769371,0 -4.420268798553066,48.39888251606975,0 -4.421299308804647,48.39901363752404,0 -4.422354301061512,48.39912726572305,0 -4.424080604710731,48.39930109971873,0 -4.424385339515222,48.39928085470888,0 -4.424871631739511,48.39926416141063,0 -4.425322214479211,48.39922917853458,0 -4.426314821388598,48.39916185325556,0 -4.427351232419264,48.39905977552633,0 -4.428372322655748,48.39896437081362,0 -4.429179192361568,48.39887780999874,0 -4.429256358804543,48.39885950503502,0 -4.429514026912333,48.3987963110992,0 -4.429924562959521,48.39869768523172,0 -4.430050512750458,48.39867675963306,0 -4.430279479953825,48.39866021612983,0 -4.430521834992643,48.3986559138674,0 -4.430677488444061,48.39865576578945,0 -4.430975631351012,48.3986892379135,0 -4.431197544590278,48.39873410219595,0 -4.431454899382715,48.39878795955889,0 -4.431683018185551,48.39879812643196,0 -4.431893409751261,48.39877919931743,0 -4.4320347692465,48.3987376176153,0 -4.432105562400999,48.39869951004864,0 -4.432095529532972,48.39865486033608,0 -4.431563606006437,48.39846737711972,0 -4.431576700713765,48.39822926926898,0 -4.431634904427034,48.39811511293881,0 -4.431772695030192,48.39807447172138,0 -4.4319437734152,48.39801920979315,0 -4.43224956589264,48.39792627802483,0 -4.432558548149769,48.39782927620799,0 -4.432985566583283,48.39768808819858,0 -4.433403801228169,48.39755493767091,0 -4.433739946349378,48.39745261525579,0 -4.434373371291746,48.39725434022368,0 -4.435143681901035,48.39696718471809,0 -4.435478846272371,48.39684367212513,0 -4.435991526101981,48.39665529844311,0 -4.436122225124086,48.39655209985364,0 -4.43651269816163,48.39636424318576,0 -4.436778725767194,48.396237951166,0 -4.436956984495033,48.39615045732765,0 -4.437232699933164,48.39607364358645,0 -4.43750429118769,48.39599640332269,0 -4.437797111227805,48.39596236809724,0 -4.438220425988439,48.3959117849793,0 -4.438445564720537,48.39590023034016,0 -4.438755603222968,48.39592990412095,0 -4.439036693759965,48.39600888768977,0 -4.439069214847607,48.39600200417398,0 -4.439348962545954,48.3956878820207,0 -4.439600922560146,48.39563429675584,0 -4.440395434657339,48.39545994323283,0 -4.440801115454905,48.39558432626861,0 -4.44083830786086,48.39558574608187,0 -4.440858816574487,48.39558571049691,0 -4.440939364172269,48.39552877010285,0 -4.441121952730731,48.39539920964378,0 -4.441215527156989,48.39533706770098,0 -4.441542264857884,48.39518513753043,0 -4.441947303690737,48.39500171328555,0 -4.442289657122731,48.39484332259332,0 -4.44262790881165,48.39482710685819,0 -4.442876889930531,48.39482272188384,0 -4.443393266834887,48.39481624693908,0 -4.44358996234083,48.39492850119681,0 -4.443755355639617,48.39495008560262,0 -4.444010849459747,48.39489453346268,0 -4.444216832780428,48.39485157020267,0 -4.444649391533574,48.39475357586322,0 -4.445359775476244,48.39474650297439,0 -4.445461659782726,48.39479237702758,0 -4.445532324307448,48.39491445017142,0 -4.445237089502494,48.3953400575168,0 -4.444868069395832,48.39586692354348,0 -4.444435468225966,48.3964750528662,0 -4.444423871326794,48.3965379612599,0 -4.444475531659807,48.39658422648778,0 -4.444852791697405,48.3966190270063,0 -4.44513239433342,48.39664719839762,0 -4.445333378041396,48.39667090804837,0 -4.445584935602898,48.39670138082494,0 -4.445795692026301,48.39672846925311,0 -4.446223024725877,48.39681976337918,0 -4.446559363240866,48.39690801155162,0 -4.447260483500006,48.39710278892774,0 -4.447391988539594,48.397094501797,0 -4.447964697938788,48.39719245106168,0 -4.448297757569693,48.39725229507708,0 -4.449194917089349,48.39741090491798,0 -4.449308261745539,48.39745780104418,0 -4.449406840709521,48.39769360274303,0 -4.449474557309988,48.39771635221663,0 -4.449828361358986,48.39765635019702,0 -4.45033572288297,48.3976524598441,0 -4.450953533727134,48.3976702273531,0 -4.451455307595649,48.39768337929765,0 -4.451578372520389,48.3976824615654,0 -4.451873072009251,48.39777577799764,0 -4.453107681703329,48.39802798895986,0 -4.453572505426862,48.39813275803953,0 -4.453788094358858,48.39820336420185,0 -4.454106462812948,48.39835103151744,0 -4.454210089640517,48.39852640776861,0 -4.454391017171544,48.39854404093647,0 -4.454347433239771,48.3990993681748,0 -4.454309982215559,48.39951541530369,0 -4.454750820898916,48.39973247514136,0 -4.455389529394819,48.39980795763874,0 -4.456493115585451,48.39995690838716,0 -4.457494994343216,48.40009250969214,0 -4.458609511627958,48.40025121417403,0 -4.459722097367116,48.40015200039588,0 -4.460829066266591,48.40003604575636,0 -4.461405392623089,48.399976908591,0 -4.462504626923573,48.40088155680507,0 -4.464134080958903,48.40222947222514,0 -4.464099743482851,48.40318516376139,0 -4.464152891291715,48.40322154766169,0 -4.464617751026281,48.40324864352361,0 
+				</coordinates>
+			</LineString>
+		</Placemark>
+		<Placemark>
+			<name>TL01-insertion</name>
+			<LookAt>
+				<longitude>-4.218874702375586</longitude>
+				<latitude>48.46907406902875</latitude>
+				<altitude>0</altitude>
+				<heading>-31.06214294569018</heading>
+				<tilt>29.74500122774142</tilt>
+				<range>74.29774830874167</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_arrow</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-4.2191558,48.469051,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TL28-extraction</name>
+			<description>-  STA 22+202.00
+EXT SBR 25 Petit Paris Reservoir</description>
+			<LookAt>
+				<longitude>-4.464507680416834</longitude>
+				<latitude>48.40297327082146</latitude>
+				<altitude>0</altitude>
+				<heading>-0.1007021182979032</heading>
+				<tilt>28.54154118489938</tilt>
+				<range>267.0450794079285</range>
+				<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+			</LookAt>
+			<styleUrl>#msn_arrow0</styleUrl>
+			<Point>
+				<gx:drawOrder>1</gx:drawOrder>
+				<coordinates>-4.4653489,48.402975,0</coordinates>
+			</Point>
+		</Placemark>
+		<Folder>
+			<name>TL</name>
+			<Placemark>
+				<name>TL2-EXCA 1</name>
+				<description>STA 1+000.00</description>
+				<LookAt>
+					<longitude>-4.228040470180817</longitude>
+					<latitude>48.4623830967414</latitude>
+					<altitude>0</altitude>
+					<heading>-31.06887811751376</heading>
+					<tilt>25.4621579082677</tilt>
+					<range>66.72575348672878</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-blank</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.2281843,48.462293,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL3-EXCA 2</name>
+				<description>2129m insertion</description>
+				<LookAt>
+					<longitude>-4.239276736227836</longitude>
+					<latitude>48.45684172621053</latitude>
+					<altitude>0</altitude>
+					<heading>-31.07741087750458</heading>
+					<tilt>29.95317306673108</tilt>
+					<range>112.170682083052</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-blank</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.238976,48.4568527,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL4-AV2</name>
+				<description>VE2 - STA 3+183.00
+TL04 Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.251348303079659</longitude>
+					<latitude>48.4557702543912</latitude>
+					<altitude>0</altitude>
+					<heading>0.2408298490214774</heading>
+					<tilt>21.83927072543251</tilt>
+					<range>124.0376022017944</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.251628,48.455614,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL5-AV3</name>
+				<description>VE3  STA 3+785.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.258459345311445</longitude>
+					<latitude>48.45427665298394</latitude>
+					<altitude>0</altitude>
+					<heading>-0.004659310857032695</heading>
+					<tilt>26.33689700192687</tilt>
+					<range>222.9536406725111</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.2591311,48.453961,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL6-AV4</name>
+				<description>VE4  STA 5+124.00
+TL06 Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.272686327060713</longitude>
+					<latitude>48.44718432600645</latitude>
+					<altitude>0</altitude>
+					<heading>-19.28352403493288</heading>
+					<tilt>21.26937955803157</tilt>
+					<range>164.3636673584098</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.273239,48.4466399,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL7-EXCA 3</name>
+				<description>6106m insertion</description>
+				<LookAt>
+					<longitude>-4.282314453420158</longitude>
+					<latitude>48.44122060288077</latitude>
+					<altitude>0</altitude>
+					<heading>-0.01695838670269241</heading>
+					<tilt>30.00096149363678</tilt>
+					<range>213.7162543934296</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-blank2</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.282329,48.44131,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL8-AV7</name>
+				<description>VE7 STA + 6.837m</description>
+				<LookAt>
+					<longitude>-4.290532558793382</longitude>
+					<latitude>48.43650344289274</latitude>
+					<altitude>0</altitude>
+					<heading>-26.44069859188147</heading>
+					<tilt>26.66919388848145</tilt>
+					<range>169.3237829655457</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.290241,48.4363665,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL9-AV9</name>
+				<description>VE9  STA 8+317.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.305158640031437</longitude>
+					<latitude>48.42841525078398</latitude>
+					<altitude>0</altitude>
+					<heading>-0.002249044875912646</heading>
+					<tilt>25.99346102103046</tilt>
+					<range>142.099085334133</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.305344,48.4279542,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL10-AV10</name>
+				<description>VE10 STA 8+821.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.30877530436929</longitude>
+					<latitude>48.42580656089425</latitude>
+					<altitude>0</altitude>
+					<heading>-0.002189192018453913</heading>
+					<tilt>17.85967784437684</tilt>
+					<range>401.8615238923925</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.310702,48.4252009,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL11-AV11</name>
+				<description>STA 9+197.00 
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.314197004416554</longitude>
+					<latitude>48.42310441679211</latitude>
+					<altitude>0</altitude>
+					<heading>-7.856503146883168e-05</heading>
+					<tilt>42.98774259344291</tilt>
+					<range>191.2540543378131</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.314521,48.4228855,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL12-AV12-VE12</name>
+				<description>VE13 STA 9+567.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.319437597901712</longitude>
+					<latitude>48.42167748287549</latitude>
+					<altitude>0</altitude>
+					<heading>0.01810128927410988</heading>
+					<tilt>29.79145891255632</tilt>
+					<range>303.1417603458896</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.319822,48.42131999999999,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL13-AV13 -VE13</name>
+				<description>VE12  STA 10+115.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.325539036553351</longitude>
+					<latitude>48.41962844528677</latitude>
+					<altitude>0</altitude>
+					<heading>0.01389471154555112</heading>
+					<tilt>28.67807635011621</tilt>
+					<range>136.7136623926909</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.32542,48.419665,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL14-BFV vert</name>
+				<description><![CDATA[<img style="max-width:500px;" src="C:/Users/leol/AppData/LocalLow/Google/GoogleEarth/BFV verti amont étang beau repos.JPG">TL12
+
+STA 10+443.00
+RISK BFV]]></description>
+				<LookAt>
+					<longitude>-4.330094542190286</longitude>
+					<latitude>48.41978208824082</latitude>
+					<altitude>0</altitude>
+					<heading>-25.79167619563397</heading>
+					<tilt>25.09182526877467</tilt>
+					<range>161.3418348515165</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.330219,48.419373,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL15-AV14</name>
+				<description>VE14  STA 10+902.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.331977800868979</longitude>
+					<latitude>48.41753449012206</latitude>
+					<altitude>0</altitude>
+					<heading>-0.001008231096161494</heading>
+					<tilt>4.994543750289861</tilt>
+					<range>516.6141563226676</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.333929,48.4165924,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL16-AV16</name>
+				<description>STA 12+301.00
+TL14 Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.349374015095378</longitude>
+					<latitude>48.41224551166951</latitude>
+					<altitude>0</altitude>
+					<heading>-0.01133628619834034</heading>
+					<tilt>24.68890572463523</tilt>
+					<range>412.9250667835854</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.351131,48.4116639,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL17-AV18</name>
+				<description>STA 13+275.00
+ Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.363403284958424</longitude>
+					<latitude>48.41206140991321</latitude>
+					<altitude>0</altitude>
+					<heading>-7.868420520946039</heading>
+					<tilt>28.05566427702075</tilt>
+					<range>601.8302975540746</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.364279,48.4113779,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL18-AV19</name>
+				<description>STA 14+105.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.369023313445669</longitude>
+					<latitude>48.41322115736666</latitude>
+					<altitude>0</altitude>
+					<heading>-7.871511958047683</heading>
+					<tilt>27.86122665491563</tilt>
+					<range>1334.829762264404</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.375278,48.4108606,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL19-AV21</name>
+				<description>STA 15+053.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.38609000491278</longitude>
+					<latitude>48.41130919467919</latitude>
+					<altitude>0</altitude>
+					<heading>-7.884761949067863</heading>
+					<tilt>27.8728537688779</tilt>
+					<range>488.6097150395352</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.387913,48.4104302,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL20-EXCA 4</name>
+				<description>STA 16+000.00
+TL18 excavation</description>
+				<LookAt>
+					<longitude>-4.396891787267424</longitude>
+					<latitude>48.40509142515091</latitude>
+					<altitude>0</altitude>
+					<heading>-0.05826488896265724</heading>
+					<tilt>28.42050744118301</tilt>
+					<range>270.233456288114</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-blank1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.396876,48.4053887,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL21-AV22</name>
+				<description>STA 16+551.00
+Suction Cup (Type3)</description>
+				<Camera>
+					<longitude>-4.401033013999848</longitude>
+					<latitude>48.40086161003943</latitude>
+					<altitude>509.3300072770483</altitude>
+					<heading>-2.147203264250415</heading>
+					<tilt>30.00000003052183</tilt>
+					<roll>-0.646824943163914</roll>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</Camera>
+				<styleUrl>#msn_grn-square0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.403252,48.4023701,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL22-AV23</name>
+				<description>STA 17+381.00
+Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.410854648290752</longitude>
+					<latitude>48.39970164685195</latitude>
+					<altitude>0</altitude>
+					<heading>-0.006124478744356909</heading>
+					<tilt>16.79529567446464</tilt>
+					<range>397.510703401749</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.413276,48.3993227,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL23-BFV h</name>
+				<description>STA 18+233.00
+RISK BFV horizontal</description>
+				<LookAt>
+					<longitude>-4.420246935411939</longitude>
+					<latitude>48.40015600905814</latitude>
+					<altitude>0</altitude>
+					<heading>-0.009214917026876658</heading>
+					<tilt>27.08763205199883</tilt>
+					<range>699.7650928429396</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.424367,48.399354,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL24-AV24</name>
+				<description>chemin privé milieu chaussée 
+ STA 18+597.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.428334227021081</longitude>
+					<latitude>48.39935826893695</latitude>
+					<altitude>0</altitude>
+					<heading>-0.01512946083719592</heading>
+					<tilt>30.00096263651353</tilt>
+					<range>214.2349026455933</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.429414,48.3988417,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL25-AV25</name>
+				<description>STA 19+679.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.440332361752601</longitude>
+					<latitude>48.39577309498564</latitude>
+					<altitude>0</altitude>
+					<heading>-3.535410338328348</heading>
+					<tilt>29.25480273168418</tilt>
+					<range>133.9415008816292</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.440822,48.3955854,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL26-AV26</name>
+				<description>STA 20+574.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.448379463370179</longitude>
+					<latitude>48.39805185671736</latitude>
+					<altitude>0</altitude>
+					<heading>-0.09992263452453316</heading>
+					<tilt>36.30488584353952</tilt>
+					<range>827.409687643902</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-square0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.448243,48.3972532,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>TL27-EXCA5</name>
+				<LookAt>
+					<longitude>-4.460395949150128</longitude>
+					<latitude>48.40070909983007</latitude>
+					<altitude>0</altitude>
+					<heading>-9.361721925441776</heading>
+					<tilt>0</tilt>
+					<range>492.8970449753013</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_grn-blank0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.46299,48.4012878,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>BO</name>
+			<Placemark>
+				<name>BO-insertion</name>
+				<description>STA 0+060.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.219007621557927</longitude>
+					<latitude>48.46923264897909</latitude>
+					<altitude>0</altitude>
+					<heading>-41.19519281154111</heading>
+					<tilt>19.36169482481685</tilt>
+					<range>108.8016127673132</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin12</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.219136001622426,48.46895975106616,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V1</name>
+				<description>STA 2+195.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.240373009646111</longitude>
+					<latitude>48.45700136490622</latitude>
+					<altitude>0</altitude>
+					<heading>-41.20961343598541</heading>
+					<tilt>30.00087728539393</tilt>
+					<range>195.4169427951726</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin13</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.240488386176549,48.45634354414974,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V2</name>
+				<description>STA 4+378.00
+RISK Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.264012414778642</longitude>
+					<latitude>48.45127923853737</latitude>
+					<altitude>0</altitude>
+					<heading>-0.008508195217160505</heading>
+					<tilt>28.82564769793559</tilt>
+					<range>361.7083981153975</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin17</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.265444081061567,48.45095752182646,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V3</name>
+				<description>STA 5+961.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.280322479935207</longitude>
+					<latitude>48.44291992508594</latitude>
+					<altitude>0</altitude>
+					<heading>-19.28905376440872</heading>
+					<tilt>25.06970987825468</tilt>
+					<range>435.988503173619</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin19</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.281796284877713,48.4417982007691,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V4</name>
+				<description>STA 8+137.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.299845405088999</longitude>
+					<latitude>48.42958917902602</latitude>
+					<altitude>0</altitude>
+					<heading>-0.006468292502173426</heading>
+					<tilt>12.87436235054436</tilt>
+					<range>1039.896848779195</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin5</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.303729766788861,48.42908205754672,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V5</name>
+				<description>STA 8+890.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.309968432056129</longitude>
+					<latitude>48.42533668171605</latitude>
+					<altitude>0</altitude>
+					<heading>-0.0001610714415945063</heading>
+					<tilt>3.094555155754369</tilt>
+					<range>461.7730429771432</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin14</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.311642444601882,48.42489212307238,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO -V6</name>
+				<description>BO-V6 -STA 10+439.00</description>
+				<LookAt>
+					<longitude>-4.330105577899802</longitude>
+					<latitude>48.41980562190331</latitude>
+					<altitude>0</altitude>
+					<heading>-25.79207550399113</heading>
+					<tilt>22.44718048242264</tilt>
+					<range>179.9226624733401</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin16</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.330013505268273,48.41954448786624,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V7</name>
+				<description>STA 12+510.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.351319053567333</longitude>
+					<latitude>48.41247204343509</latitude>
+					<altitude>0</altitude>
+					<heading>-0.001464092738755691</heading>
+					<tilt>3.864452401524511</tilt>
+					<range>483.063989834408</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin16</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.353998335655334,48.41165893852436,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V8</name>
+				<description>STA 13+092.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.362242107472159</longitude>
+					<latitude>48.4119714964598</latitude>
+					<altitude>0</altitude>
+					<heading>-0.003839813625602814</heading>
+					<tilt>16.71793786488752</tilt>
+					<range>296.9691722371147</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin16</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.361836658575273,48.41152515193639,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V9</name>
+				<description>STA 14+807.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.383076765768338</longitude>
+					<latitude>48.41108563853214</latitude>
+					<altitude>0</altitude>
+					<heading>-7.895098088379963</heading>
+					<tilt>30.00145448206941</tilt>
+					<range>323.831648932171</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin18</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.384715539474425,48.41046438077395,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V10</name>
+				<description>STA 18+269.00
+Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.422129537959532</longitude>
+					<latitude>48.39999270526486</latitude>
+					<altitude>0</altitude>
+					<heading>-0.01054443809587874</heading>
+					<tilt>28.97314067413551</tilt>
+					<range>441.8770580426504</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin21</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.424875765993001,48.39925864571953,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V11</name>
+				<description>STA 19+194.00
+RISK Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.433671815037266</longitude>
+					<latitude>48.3972752876489</latitude>
+					<altitude>0</altitude>
+					<heading>-0.00353963338996507</heading>
+					<tilt>24.19285864883503</tilt>
+					<range>238.5087378707295</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin15</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.435144541241783,48.39696259911935,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>BO-V12</name>
+				<description>STA 20+834.00
+RISK Drain (Type20)</description>
+				<LookAt>
+					<longitude>-4.449907379221139</longitude>
+					<latitude>48.39800488622693</latitude>
+					<altitude>0</altitude>
+					<heading>-0.1348938624909838</heading>
+					<tilt>28.16148334056831</tilt>
+					<range>288.0835061288985</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ltblu-pushpin12</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.451447198593689,48.3976833777879,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>AV</name>
+			<Placemark>
+				<name>AV1</name>
+				<description>STA 0+103.00
+Suction Cup (Type3) FID 619</description>
+				<LookAt>
+					<longitude>-4.219323485104855</longitude>
+					<latitude>48.46929159095922</latitude>
+					<altitude>0</altitude>
+					<heading>-41.19541751005477</heading>
+					<tilt>24.97992749518205</tilt>
+					<range>164.413977115687</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ylw-pushpin32</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.21961106683881,48.46873589440553,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>AV5</name>
+				<description>VE5  STA 5+408.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.273137031048494</longitude>
+					<latitude>48.44647577915836</latitude>
+					<altitude>0</altitude>
+					<heading>-19.28381190695988</heading>
+					<tilt>23.04834978205611</tilt>
+					<range>584.5570806112745</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ylw-pushpin31</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.276159531141982,48.44506716067456,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>AV6</name>
+				<description>VE6  STA 6+486.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.282450542858326</longitude>
+					<latitude>48.44069572027306</latitude>
+					<altitude>0</altitude>
+					<heading>-19.2903973220158</heading>
+					<tilt>26.79193311607024</tilt>
+					<range>1027.402874134259</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_wht-pushpin1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.286567875145778,48.43834265194918,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>AV8-VE8-without DWG</name>
+				<description>STA 7+736.00
+ Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.293736205344813</longitude>
+					<latitude>48.43277852744893</latitude>
+					<altitude>0</altitude>
+					<heading>-0.002296112659808368</heading>
+					<tilt>9.071362825781991</tilt>
+					<range>1513.411992114673</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_wht-pushpin1</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.29979725158005,48.43149812601783,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>AV15-VE15</name>
+				<description>VE15  STA 12+140.00
+domaine privé
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.347700878497071</longitude>
+					<latitude>48.41209600268348</latitude>
+					<altitude>0</altitude>
+					<heading>-0.01030730911195237</heading>
+					<tilt>23.21671369186742</tilt>
+					<range>261.399055429502</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ylw-pushpin30</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.349004335066979,48.41163165244293,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>AV17-VE17</name>
+				<description>STA 12+749.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.35578550888694</longitude>
+					<latitude>48.41223392469833</latitude>
+					<altitude>0</altitude>
+					<heading>-0.002113094703238296</heading>
+					<tilt>6.527587624429878</tilt>
+					<range>290.2472779581575</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ylw-pushpin28</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.357226593161101,48.41171707902176,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>AV20</name>
+				<description>STA 14+579.00
+Suction Cup (Type3)</description>
+				<LookAt>
+					<longitude>-4.379057472244144</longitude>
+					<latitude>48.41166724396762</latitude>
+					<altitude>0</altitude>
+					<heading>-7.884137093567778</heading>
+					<tilt>28.63357468650162</tilt>
+					<range>477.9109308613217</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_ylw-pushpin10</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.381774950621637,48.41079907692812,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>BFV</name>
+			<Placemark>
+				<name>BFV hor</name>
+				<description><![CDATA[STA 10+540.00
+<img style="max-width:500px;" src="C:/Users/leol/AppData/LocalLow/Google/GoogleEarth/BFV hor aval étang beau repos.JPG">RISK BFV DN900]]></description>
+				<LookAt>
+					<longitude>-4.330150669020689</longitude>
+					<latitude>48.41954995094701</latitude>
+					<altitude>0</altitude>
+					<heading>-25.79143364878855</heading>
+					<tilt>27.41576584377</tilt>
+					<range>195.5225369309666</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_red-pushpin10</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.330786949241711,48.41892333642831,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>OLD points</name>
+			<visibility>0</visibility>
+			<Placemark>
+				<name>INSERTION -  STA 0+000.00</name>
+				<visibility>0</visibility>
+				<description>INS SBR1 Pont ar Blend Plant</description>
+				<LookAt>
+					<longitude>-4.218667767334862</longitude>
+					<latitude>48.46926636156613</latitude>
+					<altitude>0</altitude>
+					<heading>-41.19495610490058</heading>
+					<tilt>0</tilt>
+					<range>37.32848089619792</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_blue-pushpin0</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.218579557330972,48.4692681119062,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>UK STA 0+000.00</name>
+				<visibility>0</visibility>
+				<description>RISK Unknown Feature FID 615</description>
+				<LookAt>
+					<longitude>-4.218667767334862</longitude>
+					<latitude>48.46926636156613</latitude>
+					<altitude>0</altitude>
+					<heading>-41.19495610490058</heading>
+					<tilt>0</tilt>
+					<range>37.32848089619792</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_red-pushpin71</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.218579557330972,48.4692681119062,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>UK STA 0+004.00</name>
+				<visibility>0</visibility>
+				<description>RISK Unknown Feature FID616</description>
+				<LookAt>
+					<longitude>-4.218667767334862</longitude>
+					<latitude>48.46926636156613</latitude>
+					<altitude>0</altitude>
+					<heading>-41.19495610490058</heading>
+					<tilt>0</tilt>
+					<range>37.32848089619792</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_red-pushpin71</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.218596944908889,48.46928015889728,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>UK STA 0+006.00</name>
+				<visibility>0</visibility>
+				<description>RISK Unknown Feature FID 617</description>
+				<LookAt>
+					<longitude>-4.218593460269812</longitude>
+					<latitude>48.46931433263939</latitude>
+					<altitude>0</altitude>
+					<heading>-41.19490945495674</heading>
+					<tilt>3.876252873026102</tilt>
+					<range>34.2188577095602</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_red-pushpin71</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.218615293401374,48.46929331189444,0</coordinates>
+				</Point>
+			</Placemark>
+			<Placemark>
+				<name>OT STA 0+012.00</name>
+				<visibility>0</visibility>
+				<description>RISK TEE Connection 900x900x900</description>
+				<LookAt>
+					<longitude>-4.218571714698598</longitude>
+					<latitude>48.46931598290432</latitude>
+					<altitude>0</altitude>
+					<heading>-41.19489356549782</heading>
+					<tilt>9.766359041382422</tilt>
+					<range>39.87041233646359</range>
+					<gx:altitudeMode>relativeToSeaFloor</gx:altitudeMode>
+				</LookAt>
+				<styleUrl>#msn_red-pushpin71</styleUrl>
+				<Point>
+					<gx:drawOrder>1</gx:drawOrder>
+					<coordinates>-4.218691905126878,48.46926961931324,0</coordinates>
+				</Point>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>

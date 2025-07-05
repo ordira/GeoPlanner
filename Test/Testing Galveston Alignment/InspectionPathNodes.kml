@@ -1,0 +1,3974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>InspectionPathNodes.kml</name>
+	<Style id="IconStyle10">
+		<IconStyle>
+			<scale>0.75</scale>
+			<Icon>
+				<href>Layer1_Symbol_83228420_0.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff000000</color>
+			<scale>0.833333</scale>
+		</LabelStyle>
+		<PolyStyle>
+			<color>ff000000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="IconStyle11">
+		<IconStyle>
+			<scale>0.75</scale>
+			<Icon>
+				<href>Layer1_Symbol_83228888_0.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff000000</color>
+			<scale>0.833333</scale>
+		</LabelStyle>
+		<PolyStyle>
+			<color>ff000000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Style id="IconStyle14">
+		<IconStyle>
+			<scale>0.75</scale>
+			<Icon>
+				<href>Layer1_Symbol_832279d8_0.png</href>
+			</Icon>
+		</IconStyle>
+		<LabelStyle>
+			<color>ff000000</color>
+			<scale>0.833333</scale>
+		</LabelStyle>
+		<PolyStyle>
+			<color>ff000000</color>
+			<outline>0</outline>
+		</PolyStyle>
+	</Style>
+	<Folder id="FeatureLayer1">
+		<name>InspectionPathNodes</name>
+		<Snippet maxLines="0"></Snippet>
+		<Placemark id="ID_10000">
+			<name>TL 05</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-17</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Other</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>TL 05 Pothole</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-24.239</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>-27.465</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{3C45C446-3EE4-41C1-9A31-9E2E4D43A03C}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>TL 05</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-13</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>TL 05</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81597283894307,29.31551836064612,-27.46499999999651</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10001">
+			<name>BEND 01</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-18</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Elbow/Bend</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>Shaping Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{5EC9B4E1-73B0-45A7-B15E-C06971E2ECDE}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>BEND 01</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-5</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>BEND 01</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle11</styleUrl>
+			<Point>
+				<coordinates>-94.8164793486261,29.31438920688152,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10002">
+			<name>TL 03</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-19</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Other</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>TL 03 Pothole</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-25.314</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>-26.99</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{88D70F42-D420-4730-AA0E-CAABA2036F33}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>TL 03</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-10</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>TL 03</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81717911736781,29.30786240294634,-26.99000000000524</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10003">
+			<name>BEND 03</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-20</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Elbow/Bend</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>Shaping Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{6D597A13-6B3D-4233-A1FC-EFC179939092}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>BEND 03</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-16</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>BEND 03</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle11</styleUrl>
+			<Point>
+				<coordinates>-94.81564172531924,29.3170487068911,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10004">
+			<name>RED 02</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-21</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Reducer</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>20"x16" reducer</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>Record Drawings</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{7B208CE9-65F4-4A21-BB31-D99C67FAF0B4}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>RED 02</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-3</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>RED 02</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle14</styleUrl>
+			<Point>
+				<coordinates>-94.81625971503074,29.31434967067828,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10005">
+			<name>TL 04</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-22</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Air Release Valve</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>TL 04</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-23.769</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>-26.563</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{07566A98-593D-4C4A-8E74-B56DDF23C5EB}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>TL 04</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-6</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>TL 04</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81638801960614,29.31437279319067,-26.56299999999464</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10006">
+			<name>TL 06 - EXT</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-23</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Outlet</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>Extraction</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-24.118</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{621F9FE6-1D77-41C2-A18B-6E27D914C0D3}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>TL 06 - EXT</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-14</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>TL 06 - EXT</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81657933740547,29.3182391411681,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10007">
+			<name>RED 01</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-24</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Reducer</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>24"x20" Reducer</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>Record Drawings</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{19518001-3E2A-4834-891C-8C6CC36CA365}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>RED 01</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-4</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>RED 01</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle14</styleUrl>
+			<Point>
+				<coordinates>-94.81649421933736,29.31434120965462,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10008">
+			<name>TL 04A</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-25</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Other</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>TL04A based on GPS point</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-23.562</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>-26.61</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{CC1A7664-7C03-4259-8A32-77E41F34B666}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>TL 04A</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-12</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>TL 04A</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81642674238479,29.31438005343917,-26.61000000000058</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10009">
+			<name>TL 01 - INS</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-26</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Air Release Valve</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-25.406</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>-27.133</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{6F786AD3-D061-45D2-BBEE-4488C1086730}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>TL 01 - INS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-2</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>TL 01 - INS</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81712726032143,29.30774255530421,-27.13300000000163</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10010">
+			<name>TL 02</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-27</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Other</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>TL 02 Pothole</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-25.224</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>-26.901</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{20546FD5-F611-467A-9774-B93395E9B6A6}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>TL 02</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-9</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>TL 02</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81715924124386,29.3078201742485,-26.90099999999802</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10011">
+			<name>BEND 02</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-28</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Elbow/Bend</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>Shaping Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{B80A28B9-578E-4809-9D7E-82784E5D7156}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-05 8:40:03 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>BEND 02</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-15</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>BEND 02</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle11</styleUrl>
+			<Point>
+				<coordinates>-94.81621857398737,29.31434302373828,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10012">
+			<name>BEND 04</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-36</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Elbow/Bend</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>Shaping Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{0F1A686D-8E3F-4FCF-A18F-28F8741600ED}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-18 6:01:11 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>BEND 04</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-34</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>BEND 04</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle11</styleUrl>
+			<Point>
+				<coordinates>-94.81542103710169,29.31710364567801,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10013">
+			<name>BEND 05</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-37</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Elbow/Bend</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>Shaping Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{715DCECD-CAF2-4D81-8C2B-5C2C1B8C01A9}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-18 6:01:11 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>BEND 05</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-35</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>BEND 05</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle11</styleUrl>
+			<Point>
+				<coordinates>-94.81583255982493,29.31837583363667,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark id="ID_10014">
+			<name>OTL 01</name>
+			<Snippet maxLines="0"></Snippet>
+			<description><![CDATA[<html xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
+
+<head>
+
+<META http-equiv="Content-Type" content="text/html">
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+</head>
+
+<body style="margin:0px 0px 0px 0px;overflow:auto;background:#FFFFFF;">
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-collapse:collapse;padding:3px 3px 3px 3px">
+
+<tr style="text-align:center;font-weight:bold;background:#9CBCE2">
+
+<td></td>
+
+</tr>
+
+<tr>
+
+<td>
+
+<table style="font-family:Arial,Verdana,Times;font-size:12px;text-align:left;width:100%;border-spacing:0px; padding:3px 3px 3px 3px">
+
+<tr>
+
+<td>FACILITYID</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>PURE_ID</td>
+
+<td>GLVSTN-38</td>
+
+</tr>
+
+<tr>
+
+<td>INSTALLDATE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>FTYPE</td>
+
+<td>Outlet</td>
+
+</tr>
+
+<tr>
+
+<td>LOCDESC</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>STATUS</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>GROUND_ELEV</td>
+
+<td>-24.908</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INVERT_ELEV</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>ELEV_SOURCE</td>
+
+<td>GPS</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>NODE_TYPE</td>
+
+<td>GPS Point</td>
+
+</tr>
+
+<tr>
+
+<td>X</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>Y</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>GlobalID</td>
+
+<td>{29D4B939-A527-4C3A-903E-D81EE94243AB}</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>created_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>created_date</td>
+
+<td>2024-06-18 6:01:11 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>last_edited_user</td>
+
+<td>SDE</td>
+
+</tr>
+
+<tr>
+
+<td>last_edited_date</td>
+
+<td>2024-06-18 6:19:37 AM</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>INSP_ID</td>
+
+<td>GLVSTN-24-SB-CCWL-1</td>
+
+</tr>
+
+<tr>
+
+<td>CODE</td>
+
+<td>OTL 01</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>CLIENT_ID</td>
+
+<td>Galveston, City of (TX)</td>
+
+</tr>
+
+<tr>
+
+<td>PARENTNODEID</td>
+
+<td>GLVSTN-32</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SIZE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>SIZE_UNITS</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>LABEL</td>
+
+<td>OTL 01</td>
+
+</tr>
+
+<tr>
+
+<td>edit_comments</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr bgcolor="#D4E4F3">
+
+<td>SBNODE_TYPE</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+<tr>
+
+<td>REF_STATION</td>
+
+<td>&lt;Null&gt;</td>
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>
+
+</body>
+
+</html>]]></description>
+			<styleUrl>#IconStyle10</styleUrl>
+			<Point>
+				<coordinates>-94.81557008377702,29.31706622298464,0</coordinates>
+			</Point>
+		</Placemark>
+		<atom:link rel="app" href="https://www.google.com/earth/about/versions/#earth-pro" title="Google Earth Pro 7.3.6.10201"></atom:link>
+	</Folder>
+</Document>
+</kml>

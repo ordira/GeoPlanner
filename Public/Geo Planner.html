@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geo Planner</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Custom font */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Ensure map takes up available height */
+        #map {
+            height: calc(100vh - 160px); 
+            min-height: 400px;
+        }
+        /* Style for selected points during alignment creation */
+        .leaflet-marker-icon.selected-for-alignment {
+            filter: hue-rotate(90deg) saturate(5); 
+        }
+        /* Modal styles */
+        .modal {
+            display: none; 
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+            max-width: 600px; 
+            border-radius: 8px;
+            max-height: 90vh; 
+            overflow-y: auto;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        #pointsList div:hover, #allPointsModalContent div.point-detail-item:hover {
+            background-color: #f0f0f0;
+        }
+        .search-result-marker {
+            background-color: rgba(59, 130, 246, 0.7); 
+            border: 2px solid #2563EB; 
+            border-radius: 50%;
+            box-shadow: 0 0 5px rgba(0,0,0,0.5);
+        }
+        .all-points-photo {
+            max-width: 100%;
+            max-height: 200px;
+            object-fit: contain;
+            margin-top: 8px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto p-4">
+        <header class="mb-6 text-center">
+            <h1 class="text-4xl font-bold text-blue-600">Geo Planner <i class="fas fa-map-marked-alt"></i></h1>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="md:col-span-1 bg-white p-6 rounded-lg shadow-lg">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">Search Location</h2>
+                <div class="space-y-3 mb-4">
+                    <div>
+                        <label for="searchInput" class="block text-sm font-medium text-gray-700">Location Name:</label>
+                        <input type="text" id="searchInput" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="e.g., Paris, France">
+                    </div>
+                    <button id="searchLocationBtn" class="w-full bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        <i class="fas fa-search-location"></i> Search
+                    </button>
+                </div>
+                <p id="searchStatus" class="text-xs text-gray-500 mb-2 min-h-[1.25em]"></p>
+
+                <hr class="my-6">
+
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">Add Tracking Point</h2>
+                <p class="text-xs text-gray-500 mb-2">Single-click map to get coordinates, or double-click to add point directly.</p>
+                <div class="space-y-4">
+                    <div>
+                        <label for="latitude" class="block text-sm font-medium text-gray-700">Latitude:</label>
+                        <input type="number" id="latitude" step="any" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="e.g., 40.7128">
+                    </div>
+                    <div>
+                        <label for="longitude" class="block text-sm font-medium text-gray-700">Longitude:</label>
+                        <input type="number" id="longitude" step="any" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="e.g., -74.0060">
+                    </div>
+                    <div>
+                        <label for="elevation" class="block text-sm font-medium text-gray-700">Elevation (m):</label>
+                        <input type="number" id="elevation" step="any" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="e.g., 100">
+                    </div>
+                    <div>
+                        <label for="note" class="block text-sm font-medium text-gray-700">Note:</label>
+                        <textarea id="note" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm" placeholder="Enter a note for this point..."></textarea>
+                    </div>
+                    <div>
+                        <label for="photo" class="block text-sm font-medium text-gray-700">Photo (Optional):</label>
+                        <input type="file" id="photo" accept="image/*" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                        <p class="mt-1 text-xs text-gray-500">Note: Large images will increase CSV file size.</p>
+                    </div>
+                    <button id="addPointBtn" class="w-full bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        <i class="fas fa-plus-circle"></i> Add Point from Form
+                    </button>
+                </div>
+
+                <hr class="my-6">
+
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">Manage Alignments</h2>
+                <div class="space-y-3">
+                    <button id="startAlignmentBtn" class="w-full bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        <i class="fas fa-project-diagram"></i> Start New Alignment
+                    </button>
+                    <button id="finishAlignmentBtn" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out hidden">
+                        <i class="fas fa-check-circle"></i> Finish Alignment
+                    </button>
+                     <button id="cancelAlignmentBtn" class="w-full bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out hidden">
+                        <i class="fas fa-times-circle"></i> Cancel Alignment
+                    </button>
+                </div>
+                <p id="alignmentInstructions" class="mt-2 text-sm text-gray-600 hidden">Click on map markers to add them to the alignment.</p>
+                
+                <hr class="my-6">
+
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">Filter Points Display</h2>
+                <div class="space-y-3">
+                    <button id="showAllMapPointsBtn" class="w-full bg-cyan-500 hover:bg-cyan-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        <i class="fas fa-eye"></i> Show All Points
+                    </button>
+                    <button id="hideAllMapPointsBtn" class="w-full bg-slate-500 hover:bg-slate-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        <i class="fas fa-eye-slash"></i> Hide All Points
+                    </button>
+                    <button id="showPointsWithNotesBtn" class="w-full bg-amber-500 hover:bg-amber-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                        <i class="fas fa-sticky-note"></i> Show Points with Notes
+                    </button>
+                </div>
+
+
+                <hr class="my-6">
+
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">Data Management</h2>
+                 <input type="file" id="csvFileInput" accept=".csv" class="hidden"> 
+                 <button id="loadCSVBtn" class="w-full bg-sky-500 hover:bg-sky-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out mb-3">
+                    <i class="fas fa-upload"></i> Load Data from CSV
+                </button>
+                 <button id="showAllPointsBtn" class="w-full bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out mb-3">
+                    <i class="fas fa-list-alt"></i> Show All Points Details
+                </button>
+                <button id="downloadCSVBtn" class="w-full bg-purple-500 hover:bg-purple-600 text-white font-bold py-2 px-4 rounded-lg shadow focus:outline-none focus:shadow-outline transition duration-150 ease-in-out">
+                    <i class="fas fa-download"></i> Download Data as CSV
+                </button>
+
+                <hr class="my-6">
+                <h2 class="text-2xl font-semibold mb-4 text-gray-700">Points & Alignments List</h2>
+                <div id="pointsList" class="space-y-3 max-h-60 overflow-y-auto bg-gray-50 p-3 rounded-md">
+                    <p class="text-sm text-gray-500">No points added yet.</p>
+                </div>
+
+            </div>
+
+            <div class="md:col-span-2 bg-white p-1 rounded-lg shadow-lg">
+                <div id="map" class="rounded-lg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="editPointModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeModalBtn">&times;</span>
+            <h3 class="text-xl font-semibold mb-4">Edit Point</h3>
+            <input type="hidden" id="editPointId">
+            <div>
+                <label for="editLatitude" class="block text-sm font-medium text-gray-700">Latitude:</label>
+                <input type="number" id="editLatitude" step="any" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+            <div class="mt-2">
+                <label for="editLongitude" class="block text-sm font-medium text-gray-700">Longitude:</label>
+                <input type="number" id="editLongitude" step="any" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+            <div class="mt-2">
+                <label for="editElevation" class="block text-sm font-medium text-gray-700">Elevation (m):</label>
+                <input type="number" id="editElevation" step="any" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm">
+            </div>
+            <div class="mt-2">
+                <label for="editNote" class="block text-sm font-medium text-gray-700">Note:</label>
+                <textarea id="editNote" rows="3" class="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 sm:text-sm"></textarea>
+            </div>
+            <div class="mt-2">
+                <label for="editPhoto" class="block text-sm font-medium text-gray-700">New Photo (Optional):</label>
+                <input type="file" id="editPhoto" accept="image/*" class="mt-1 block w-full text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100">
+                <img id="currentPhotoPreview" src="#" alt="Current Photo" class="mt-2 max-h-32 rounded hidden">
+            </div>
+            <div class="mt-4 flex justify-end space-x-2">
+                <button id="saveEditBtn" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-lg shadow">Save Changes</button>
+                <button id="cancelEditBtn" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded-lg shadow">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="allPointsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="closeAllPointsModalBtn">&times;</span>
+            <h3 class="text-2xl font-semibold mb-6 text-gray-800">All Point Details</h3>
+            <div id="allPointsModalContent" class="space-y-6">
+                </div>
+        </div>
+    </div>
+
+
+    <script>
+        // --- Global Variables ---
+        let map;
+        let points = []; 
+        let alignments = []; 
+        let pointIdCounter = 0;
+        let alignmentIdCounter = 0;
+        let isAlignmentMode = false;
+        let currentAlignmentPoints = []; 
+        let currentAlignmentPolyline = null; 
+        let searchMarker = null; 
+
+        const alignmentColors = ['#3b82f6', '#10b981', '#06b6d4', '#6b7280', '#1f2937', '#ef4444', '#8b5cf6', '#f97316', '#ec4899', '#84cc16'];
+
+        // --- Leaflet Icon Definitions ---
+        const defaultIcon = L.icon({
+            iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
+            iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
+            shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+        const greenIcon = L.icon({
+            iconUrl: 'https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-2x-green.png',
+            shadowUrl: 'https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/images/marker-shadow.png', // Standard shadow
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+        });
+
+
+        // --- DOM Elements ---
+        const searchInput = document.getElementById('searchInput');
+        const searchLocationBtn = document.getElementById('searchLocationBtn');
+        const searchStatus = document.getElementById('searchStatus');
+
+        const latInput = document.getElementById('latitude');
+        const lngInput = document.getElementById('longitude');
+        const elevationInput = document.getElementById('elevation'); 
+        const noteInput = document.getElementById('note');
+        const photoInput = document.getElementById('photo');
+        const addPointBtn = document.getElementById('addPointBtn');
+        const pointsListDiv = document.getElementById('pointsList');
+
+        const csvFileInput = document.getElementById('csvFileInput'); 
+        const loadCSVBtn = document.getElementById('loadCSVBtn'); 
+        const showAllPointsBtn = document.getElementById('showAllPointsBtn'); 
+        const downloadCSVBtn = document.getElementById('downloadCSVBtn');
+
+        const startAlignmentBtn = document.getElementById('startAlignmentBtn');
+        const finishAlignmentBtn = document.getElementById('finishAlignmentBtn');
+        const cancelAlignmentBtn = document.getElementById('cancelAlignmentBtn');
+        const alignmentInstructions = document.getElementById('alignmentInstructions');
+
+        // Point visibility filter buttons
+        const showAllMapPointsBtn = document.getElementById('showAllMapPointsBtn');
+        const hideAllMapPointsBtn = document.getElementById('hideAllMapPointsBtn');
+        const showPointsWithNotesBtn = document.getElementById('showPointsWithNotesBtn');
+
+
+        // Edit Point Modal elements
+        const editPointModal = document.getElementById('editPointModal');
+        const closeModalBtn = document.getElementById('closeModalBtn');
+        const editPointIdInput = document.getElementById('editPointId');
+        const editLatInput = document.getElementById('editLatitude');
+        const editLngInput = document.getElementById('editLongitude');
+        const editElevationInput = document.getElementById('editElevation'); 
+        const editNoteInput = document.getElementById('editNote');
+        const editPhotoInput = document.getElementById('editPhoto');
+        const currentPhotoPreview = document.getElementById('currentPhotoPreview');
+        const saveEditBtn = document.getElementById('saveEditBtn');
+        const cancelEditBtn = document.getElementById('cancelEditBtn');
+
+        // All Points Modal elements
+        const allPointsModal = document.getElementById('allPointsModal');
+        const closeAllPointsModalBtn = document.getElementById('closeAllPointsModalBtn');
+        const allPointsModalContent = document.getElementById('allPointsModalContent');
+
+
+        // --- Map Initialization ---
+        function initMap() {
+            map = L.map('map').setView([20, 0], 2); 
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            map.on('click', function(e) {
+                if (!isAlignmentMode) { 
+                    latInput.value = e.latlng.lat.toFixed(6);
+                    lngInput.value = e.latlng.lng.toFixed(6);
+                    searchStatus.textContent = 'Coordinates populated. Fill other fields and add point.';
+                    searchStatus.className = 'text-xs text-blue-500 mb-2';
+                }
+            });
+
+            map.on('dblclick', function(e) {
+                if (isAlignmentMode) return; 
+
+                const lat = e.latlng.lat;
+                const lng = e.latlng.lng;
+                const pointId = `p${++pointIdCounter}`;
+                const elevation = 0; 
+                
+                addPointToMapAndList(pointId, lat, lng, elevation, '', null, null);
+                renderPointsList(); 
+                map.setView([lat, lng], Math.max(map.getZoom(), 10)); 
+                
+                searchStatus.textContent = `Point ${pointId} added at Lng: ${lng.toFixed(4)}, Lat: ${lat.toFixed(4)}, Elev: ${elevation}m.`;
+                searchStatus.className = 'text-xs text-green-600 mb-2';
+                
+                latInput.value = '';
+                lngInput.value = '';
+                elevationInput.value = ''; 
+            });
+        }
+
+        // --- Location Search ---
+        searchLocationBtn.addEventListener('click', async () => {
+            const query = searchInput.value.trim();
+            if (!query) {
+                searchStatus.textContent = 'Please enter a location to search.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                return;
+            }
+            searchStatus.textContent = 'Searching...';
+            searchStatus.className = 'text-xs text-blue-500 mb-2';
+
+            if (searchMarker) {
+                map.removeLayer(searchMarker);
+                searchMarker = null;
+            }
+
+            try {
+                const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(query)}&limit=1`);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const data = await response.json();
+
+                if (data && data.length > 0) {
+                    const result = data[0];
+                    const lat = parseFloat(result.lat);
+                    const lng = parseFloat(result.lon);
+                    
+                    map.setView([lat, lng], 13); 
+
+                    searchMarker = L.circleMarker([lat, lng], {
+                        radius: 8,
+                        color: 'blue',
+                        fillColor: '#3b82f6', 
+                        fillOpacity: 0.7
+                    }).addTo(map);
+                    searchMarker.bindPopup(`<b>Search Result:</b><br>${result.display_name}<br><small>Click map or use form to add point.</small>`).openPopup();
+
+                    searchStatus.textContent = `Found: ${result.display_name.substring(0,45)}${result.display_name.length > 45 ? '...' : ''}`;
+                    searchStatus.className = 'text-xs text-green-600 mb-2';
+                    latInput.value = lat.toFixed(6);
+                    lngInput.value = lng.toFixed(6);
+                    elevationInput.value = ''; 
+
+                } else {
+                    searchStatus.textContent = 'Location not found.';
+                    searchStatus.className = 'text-xs text-red-500 mb-2';
+                }
+            } catch (error) {
+                console.error('Error during geocoding:', error);
+                searchStatus.textContent = 'Error searching for location.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+            }
+        });
+
+        searchInput.addEventListener('keypress', function(event) {
+            if (event.key === 'Enter' || event.keyCode === 13) {
+                event.preventDefault(); 
+                searchLocationBtn.click(); 
+            }
+        });
+
+
+        // --- Point Management (from Form) ---
+        addPointBtn.addEventListener('click', () => {
+            const lat = parseFloat(latInput.value);
+            const lng = parseFloat(lngInput.value);
+            const elevation = parseFloat(elevationInput.value) || 0; 
+            const note = noteInput.value.trim();
+            const photoFile = photoInput.files[0];
+
+            if (isNaN(lat) || isNaN(lng)) {
+                searchStatus.textContent = 'Please enter valid latitude and longitude for the point.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                return;
+            }
+            
+            const pointId = `p${++pointIdCounter}`; 
+
+            if (photoFile) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    addPointToMapAndList(pointId, lat, lng, elevation, note, e.target.result, photoFile.name);
+                    renderPointsList(); 
+                    map.setView([lat, lng], Math.max(map.getZoom(), 10)); 
+                    searchStatus.textContent = `Point ${pointId} added from form.`;
+                    searchStatus.className = 'text-xs text-green-600 mb-2';
+                };
+                reader.readAsDataURL(photoFile);
+            } else {
+                addPointToMapAndList(pointId, lat, lng, elevation, note, null, null);
+                renderPointsList(); 
+                map.setView([lat, lng], Math.max(map.getZoom(), 10)); 
+                searchStatus.textContent = `Point ${pointId} added from form.`;
+                searchStatus.className = 'text-xs text-green-600 mb-2';
+            }
+
+            latInput.value = '';
+            lngInput.value = '';
+            elevationInput.value = '';
+            noteInput.value = '';
+            photoInput.value = ''; 
+        });
+
+        function addPointToMapAndList(id, lat, lng, elevation, note, photoDataUrl, photoFileName) {
+            const existingPointIndex = points.findIndex(p => p.id === id);
+            if (existingPointIndex !== -1) {
+                console.warn(`Point with ID ${id} already exists. Overwriting.`);
+                if (points[existingPointIndex].marker) {
+                    map.removeLayer(points[existingPointIndex].marker);
+                }
+                points.splice(existingPointIndex, 1);
+            }
+
+            const hasNoteOrPhoto = (note && note.trim() !== '') || photoDataUrl;
+            const iconToUse = hasNoteOrPhoto ? greenIcon : defaultIcon;
+
+            const marker = L.marker([lat, lng], { icon: iconToUse }).addTo(map); 
+            marker.pointId = id; 
+
+            let popupContent = `<b>Point ${id}</b><br>Lat: ${lat.toFixed(4)}, Lng: ${lng.toFixed(4)}, Elev: ${elevation}m`;
+            if (note) popupContent += `<br>Note: ${note.substring(0,50)}${note.length > 50 ? '...' : ''}`;
+            if (photoDataUrl) popupContent += `<br><img src="${photoDataUrl}" alt="${photoFileName || 'Photo'}" style="max-width:100px; max-height:100px; margin-top:5px;">`;
+            
+            marker.bindPopup(popupContent);
+
+            marker.on('click', (e) => {
+                L.DomEvent.stopPropagation(e); 
+                if (isAlignmentMode) {
+                    togglePointInCurrentAlignment(id, marker);
+                } else {
+                    openEditModal(id);
+                }
+            });
+
+            points.push({ id, lat, lng, elevation, marker, note, photoDataUrl, photoFileName, iconType: hasNoteOrPhoto ? 'green' : 'default' });
+            console.log("Point data processed for ID:", id);
+        }
+
+        // --- Point Visibility Controls ---
+        hideAllMapPointsBtn.addEventListener('click', () => {
+            points.forEach(point => {
+                if (point.marker && map.hasLayer(point.marker)) {
+                    map.removeLayer(point.marker);
+                }
+            });
+            searchStatus.textContent = 'All points hidden from map.';
+            searchStatus.className = 'text-xs text-gray-500 mb-2';
+        });
+
+        showAllMapPointsBtn.addEventListener('click', () => {
+            points.forEach(point => {
+                if (point.marker && !map.hasLayer(point.marker)) {
+                    point.marker.addTo(map);
+                }
+            });
+            searchStatus.textContent = 'All points shown on map.';
+            searchStatus.className = 'text-xs text-gray-500 mb-2';
+        });
+
+        showPointsWithNotesBtn.addEventListener('click', () => {
+            let shownCount = 0;
+            let hiddenCount = 0;
+            points.forEach(point => {
+                if (point.marker) {
+                    const hasNote = point.note && point.note.trim() !== '';
+                    if (hasNote) {
+                        if (!map.hasLayer(point.marker)) {
+                            point.marker.addTo(map);
+                        }
+                        shownCount++;
+                    } else {
+                        if (map.hasLayer(point.marker)) {
+                            map.removeLayer(point.marker);
+                        }
+                        hiddenCount++;
+                    }
+                }
+            });
+            searchStatus.textContent = `Showing ${shownCount} points with notes. ${hiddenCount} points without notes hidden.`;
+            searchStatus.className = 'text-xs text-gray-500 mb-2';
+        });
+
+
+        function renderPointsList() {
+            pointsListDiv.innerHTML = ''; 
+
+            if (points.length === 0 && alignments.length === 0) {
+                pointsListDiv.innerHTML = '<p class="text-sm text-gray-500">No points or alignments added yet.</p>';
+                return;
+            }
+            
+            if (points.length > 0) {
+                const pointsHeader = document.createElement('h4');
+                pointsHeader.className = 'text-md font-semibold text-gray-600 mb-1';
+                pointsHeader.textContent = 'Points:';
+                pointsListDiv.appendChild(pointsHeader);
+            }
+
+            points.forEach(point => {
+                const pointDiv = document.createElement('div');
+                pointDiv.className = 'p-2 border border-gray-200 rounded-md cursor-pointer hover:bg-gray-100';
+                const markerColor = (point.note && point.note.trim() !== '') || point.photoDataUrl ? 'text-green-600' : 'text-blue-600';
+
+                pointDiv.innerHTML = `
+                    <div class="flex justify-between items-center">
+                        <span class="font-medium text-sm ${markerColor}">ID: ${point.id}</span>
+                        <div>
+                            <button class="edit-point-btn text-sm text-yellow-500 hover:text-yellow-700 mr-2" data-id="${point.id}"><i class="fas fa-edit"></i></button>
+                            <button class="delete-point-btn text-sm text-red-500 hover:text-red-700" data-id="${point.id}"><i class="fas fa-trash-alt"></i></button>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-600">Lat: ${point.lat.toFixed(4)}, Lng: ${point.lng.toFixed(4)}, Elev: ${point.elevation}m</p>
+                    ${point.note ? `<p class="text-xs text-gray-500 truncate" title="${point.note}">Note: ${point.note}</p>` : ''}
+                    ${point.photoFileName ? `<p class="text-xs text-gray-500"><i class="fas fa-camera"></i> ${point.photoFileName}</p>` : ''}
+                `;
+                pointDiv.addEventListener('click', (e) => {
+                     if (!e.target.closest('button')) { 
+                        map.setView([point.lat, point.lng], 15);
+                        if (point.marker && map.hasLayer(point.marker)) { 
+                           point.marker.openPopup();
+                        } else if (point.marker && !map.hasLayer(point.marker)) {
+                            searchStatus.textContent = `Point ${point.id} is currently hidden. Click "Show All Points" to see it.`;
+                            searchStatus.className = 'text-xs text-orange-500 mb-2';
+                        }
+                     }
+                });
+                pointsListDiv.appendChild(pointDiv);
+            });
+
+            document.querySelectorAll('.edit-point-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation(); 
+                    openEditModal(e.currentTarget.dataset.id);
+                });
+            });
+            document.querySelectorAll('.delete-point-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation(); 
+                    if (confirm('Are you sure you want to delete this point and any associated alignments?')) {
+                        deletePoint(e.currentTarget.dataset.id);
+                    }
+                });
+            });
+
+            if (alignments.length > 0) {
+                const alignmentsHeader = document.createElement('h4');
+                alignmentsHeader.className = 'text-md font-semibold text-gray-600 mt-3 mb-1';
+                alignmentsHeader.textContent = 'Alignments:';
+                pointsListDiv.appendChild(alignmentsHeader);
+            }
+            alignments.forEach(alignment => {
+                const alignmentDiv = document.createElement('div');
+                alignmentDiv.className = 'p-2 border border-gray-200 rounded-md cursor-pointer';
+                const listColor = alignment.color || 'blue'; 
+                alignmentDiv.innerHTML = `
+                    <div class="flex justify-between items-center">
+                        <span class="font-medium text-sm" style="color:${listColor};">Alignment ${alignment.id}</span>
+                        <button class="delete-alignment-btn text-sm text-red-500 hover:text-red-700" data-id="${alignment.id}"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                    <p class="text-xs text-gray-600">Points: ${alignment.pointIds.join(', ')}</p>
+                `;
+                 alignmentDiv.addEventListener('click', (e) => {
+                     if (!e.target.closest('button')) {
+                        const alignmentPoints = alignment.pointIds.map(pid => points.find(p => p.id === pid)).filter(p => p);
+                        if (alignmentPoints.length > 0) {
+                            const bounds = L.latLngBounds(alignmentPoints.map(p => [p.lat, p.lng]));
+                            map.fitBounds(bounds, {padding: [50, 50]});
+                        }
+                     }
+                });
+                pointsListDiv.appendChild(alignmentDiv);
+            });
+             document.querySelectorAll('.delete-alignment-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    if (confirm('Are you sure you want to delete this alignment?')) {
+                        deleteAlignment(e.currentTarget.dataset.id);
+                    }
+                });
+            });
+        }
+
+        function deletePoint(pointIdToDelete) {
+            const pointIndex = points.findIndex(p => p.id === pointIdToDelete);
+            if (pointIndex > -1) {
+                const point = points[pointIndex];
+                if (point.marker) {
+                    map.removeLayer(point.marker); 
+                }
+                points.splice(pointIndex, 1);
+            }
+
+            alignments = alignments.filter(align => {
+                if (align.pointIds.includes(pointIdToDelete)) {
+                    if (align.polyline) {
+                        map.removeLayer(align.polyline);
+                    }
+                    return false; 
+                }
+                return true; 
+            });
+            
+            if (isAlignmentMode) {
+                const currentIdx = currentAlignmentPoints.indexOf(pointIdToDelete);
+                if (currentIdx > -1) {
+                    currentAlignmentPoints.splice(currentIdx, 1);
+                    redrawCurrentAlignmentPolyline();
+                }
+            }
+
+            renderPointsList();
+            searchStatus.textContent = `Point ${pointIdToDelete} and associated alignments deleted.`;
+            searchStatus.className = 'text-xs text-red-500 mb-2';
+        }
+        
+        function deleteAlignment(alignmentIdToDelete) {
+            const alignmentIndex = alignments.findIndex(a => a.id === alignmentIdToDelete);
+            if (alignmentIndex > -1) {
+                const alignment = alignments[alignmentIndex];
+                if (alignment.polyline) {
+                    map.removeLayer(alignment.polyline);
+                }
+                alignments.splice(alignmentIndex, 1);
+                renderPointsList();
+                searchStatus.textContent = `Alignment ${alignmentIdToDelete} deleted.`;
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+            }
+        }
+
+
+        // --- Alignment Management ---
+        startAlignmentBtn.addEventListener('click', () => {
+            if (points.length < 2) {
+                searchStatus.textContent = "You need at least two points on the map to create an alignment.";
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                return;
+            }
+            showAllMapPointsBtn.click(); 
+
+            searchStatus.textContent = 'Alignment mode started. Click markers to select.';
+            searchStatus.className = 'text-xs text-blue-500 mb-2';
+            isAlignmentMode = true;
+            currentAlignmentPoints = [];
+            if (currentAlignmentPolyline) {
+                map.removeLayer(currentAlignmentPolyline);
+                currentAlignmentPolyline = null;
+            }
+            startAlignmentBtn.classList.add('hidden');
+            finishAlignmentBtn.classList.remove('hidden');
+            cancelAlignmentBtn.classList.remove('hidden');
+            alignmentInstructions.classList.remove('hidden');
+            [addPointBtn, searchInput, searchLocationBtn, showAllPointsBtn, loadCSVBtn, downloadCSVBtn, hideAllMapPointsBtn, showAllMapPointsBtn, showPointsWithNotesBtn].forEach(el => el.disabled = true);
+
+
+            points.forEach(p => p.marker._icon.style.cursor = 'pointer');
+        });
+
+        finishAlignmentBtn.addEventListener('click', () => {
+            if (currentAlignmentPoints.length < 2) {
+                searchStatus.textContent = 'Please select at least two points for the alignment.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                return;
+            }
+            
+            const alignmentId = `a${++alignmentIdCounter}`; 
+            const colorIndex = (alignmentIdCounter - 1) % alignmentColors.length; 
+            const chosenColor = alignmentColors[colorIndex];
+
+            if (currentAlignmentPolyline) {
+                currentAlignmentPolyline.setStyle({ color: chosenColor, dashArray: null }); 
+            }
+
+            const newAlignment = {
+                id: alignmentId,
+                pointIds: [...currentAlignmentPoints], 
+                polyline: currentAlignmentPolyline,
+                color: chosenColor 
+            };
+            alignments.push(newAlignment);
+            
+            currentAlignmentPolyline = null; 
+
+            resetAlignmentMode();
+            renderPointsList();
+            searchStatus.textContent = `Alignment ${alignmentId} finished and saved.`;
+            searchStatus.className = 'text-xs text-green-600 mb-2';
+        });
+
+        cancelAlignmentBtn.addEventListener('click', () => {
+            if (currentAlignmentPolyline) {
+                map.removeLayer(currentAlignmentPolyline);
+                currentAlignmentPolyline = null;
+            }
+            resetAlignmentMode();
+            searchStatus.textContent = 'Alignment cancelled.';
+            searchStatus.className = 'text-xs text-gray-500 mb-2';
+        });
+        
+        function resetAlignmentMode() {
+            isAlignmentMode = false;
+            currentAlignmentPoints = [];
+            points.forEach(p => {
+                if (p.marker && p.marker._icon) {
+                     p.marker._icon.classList.remove('selected-for-alignment');
+                     p.marker._icon.style.cursor = ''; 
+                }
+            });
+            startAlignmentBtn.classList.remove('hidden');
+            finishAlignmentBtn.classList.add('hidden');
+            cancelAlignmentBtn.classList.add('hidden');
+            alignmentInstructions.classList.add('hidden');
+            [addPointBtn, searchInput, searchLocationBtn, showAllPointsBtn, loadCSVBtn, downloadCSVBtn, hideAllMapPointsBtn, showAllMapPointsBtn, showPointsWithNotesBtn].forEach(el => el.disabled = false);
+        }
+
+
+        function togglePointInCurrentAlignment(pointId, markerElement) {
+            const index = currentAlignmentPoints.indexOf(pointId);
+            if (index > -1) { 
+                currentAlignmentPoints.splice(index, 1);
+                markerElement._icon.classList.remove('selected-for-alignment');
+            } else { 
+                currentAlignmentPoints.push(pointId);
+                markerElement._icon.classList.add('selected-for-alignment');
+            }
+            redrawCurrentAlignmentPolyline();
+        }
+
+        function redrawCurrentAlignmentPolyline() {
+            if (currentAlignmentPolyline) {
+                map.removeLayer(currentAlignmentPolyline);
+                currentAlignmentPolyline = null;
+            }
+
+            if (currentAlignmentPoints.length >= 2) {
+                const latLngs = currentAlignmentPoints.map(pid => {
+                    const point = points.find(p => p.id === pid);
+                    return [point.lat, point.lng];
+                });
+                currentAlignmentPolyline = L.polyline(latLngs, { color: 'orange', weight: 3, dashArray: '5, 5' }).addTo(map);
+            }
+        }
+
+        // --- CSV Export ---
+        downloadCSVBtn.addEventListener('click', () => {
+            if (points.length === 0 && alignments.length === 0) {
+                searchStatus.textContent = 'No data to export.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                return;
+            }
+            
+            let csvContent = "data:text/csv;charset=utf-8,";
+            csvContent += "Type,ID,Latitude,Longitude,Elevation,Note,PhotoFileName,PhotoDataURL,AlignmentPointIDs\r\n"; 
+
+            points.forEach(point => {
+                const noteCleaned = point.note ? `"${point.note.replace(/"/g, '""')}"` : ''; 
+                const photoFileNameCleaned = point.photoFileName ? `"${point.photoFileName.replace(/"/g, '""')}"` : '';
+                const photoDataUrlCleaned = point.photoDataUrl ? `"${point.photoDataUrl}"` : ''; 
+                const elevationValue = point.elevation !== undefined ? point.elevation : '';
+                
+                let row = `Point,${point.id},${point.lat},${point.lng},${elevationValue},${noteCleaned},${photoFileNameCleaned},${photoDataUrlCleaned},\r\n`;
+                csvContent += row;
+            });
+
+            alignments.forEach(alignment => {
+                const pointIdsString = alignment.pointIds.join(';'); 
+                let row = `Alignment,${alignment.id},,,,,,,,"${pointIdsString}"\r\n`; 
+                csvContent += row;
+            });
+
+            const encodedUri = encodeURI(csvContent);
+            const link = document.createElement("a");
+            link.setAttribute("href", encodedUri);
+            link.setAttribute("download", "geo_planner_data.csv");
+            document.body.appendChild(link); 
+            link.click();
+            document.body.removeChild(link);
+            searchStatus.textContent = 'Data exported to CSV.';
+            searchStatus.className = 'text-xs text-green-600 mb-2';
+        });
+
+        // --- CSV Import ---
+        loadCSVBtn.addEventListener('click', () => {
+            csvFileInput.click(); 
+        });
+
+        csvFileInput.addEventListener('change', (event) => {
+            const file = event.target.files[0];
+            if (!file) {
+                searchStatus.textContent = 'No file selected.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                return;
+            }
+            if (!file.name.endsWith('.csv')) {
+                searchStatus.textContent = 'Please select a .csv file.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                csvFileInput.value = ''; 
+                return;
+            }
+
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                try {
+                    const csvData = e.target.result;
+                    processCSVData(csvData);
+                    searchStatus.textContent = 'CSV data loaded successfully.';
+                    searchStatus.className = 'text-xs text-green-600 mb-2';
+                } catch (error) {
+                    console.error("Error processing CSV:", error);
+                    searchStatus.textContent = `Error loading CSV: ${error.message}`;
+                    searchStatus.className = 'text-xs text-red-500 mb-2';
+                } finally {
+                    csvFileInput.value = ''; 
+                }
+            };
+            reader.onerror = () => {
+                searchStatus.textContent = 'Error reading file.';
+                searchStatus.className = 'text-xs text-red-500 mb-2';
+                csvFileInput.value = '';
+            };
+            reader.readAsText(file);
+        });
+        
+        function parseCSVLine(line) {
+            const values = [];
+            let currentVal = '';
+            let inQuotes = false;
+            for (let i = 0; i < line.length; i++) {
+                const char = line[i];
+                if (char === '"') {
+                    if (inQuotes && i + 1 < line.length && line[i+1] === '"') {
+                        currentVal += '"'; 
+                        i++; 
+                    } else {
+                        inQuotes = !inQuotes; 
+                    }
+                } else if (char === ',' && !inQuotes) {
+                    values.push(currentVal);
+                    currentVal = '';
+                } else {
+                    currentVal += char;
+                }
+            }
+            values.push(currentVal); 
+            return values;
+        }
+
+
+        function processCSVData(csvText) {
+            console.log("Starting CSV processing...");
+            points.forEach(p => { if (p.marker) map.removeLayer(p.marker); });
+            alignments.forEach(a => { if (a.polyline) map.removeLayer(a.polyline); });
+            points = [];
+            alignments = [];
+            let maxPointIdNum = 0;
+            let maxAlignmentIdNum = 0;
+
+            const lines = csvText.split(/\r\n|\n/).filter(line => line.trim() !== '');
+            if (lines.length < 2) {
+                throw new Error("CSV file is empty or has no data rows.");
+            }
+
+            const headers = parseCSVLine(lines[0]).map(h => h.trim());
+            console.log("CSV Headers:", headers);
+            const expectedHeaders = ["Type", "ID", "Latitude", "Longitude", "Elevation", "Note", "PhotoFileName", "PhotoDataURL", "AlignmentPointIDs"];
+            if (!expectedHeaders.every(eh => headers.includes(eh))) {
+                 throw new Error("CSV headers do not match expected format. Expected: " + expectedHeaders.join(', ') + "; Found: " + headers.join(', '));
+            }
+
+            const pointRowsData = [];
+            const alignmentRowsData = [];
+
+            for (let i = 1; i < lines.length; i++) {
+                const values = parseCSVLine(lines[i]);
+                const rowData = {};
+                headers.forEach((header, index) => {
+                    rowData[header] = values[index] !== undefined ? values[index].trim() : '';
+                });
+
+                if (rowData.Type === 'Point') {
+                    pointRowsData.push(rowData);
+                } else if (rowData.Type === 'Alignment') {
+                    alignmentRowsData.push(rowData);
+                }
+            }
+            console.log(`Found ${pointRowsData.length} point rows and ${alignmentRowsData.length} alignment rows in CSV.`);
+
+            // Process Points
+            console.log("Processing points from CSV...");
+            pointRowsData.forEach(pData => {
+                const id = pData.ID;
+                const lat = parseFloat(pData.Latitude);
+                const lng = parseFloat(pData.Longitude);
+                const elevation = parseFloat(pData.Elevation || 0);
+                const note = pData.Note;
+                const photoFileName = pData.PhotoFileName;
+                const photoDataUrl = pData.PhotoDataURL;
+
+                if (isNaN(lat) || isNaN(lng)) {
+                    console.warn(`Skipping point with invalid coordinates: ID ${id}, Lat: ${pData.Latitude}, Lng: ${pData.Longitude}`);
+                    return; 
+                }
+                addPointToMapAndList(id, lat, lng, elevation, note, photoDataUrl, photoFileName);
+                const idNum = parseInt(id.substring(1));
+                if (!isNaN(idNum) && idNum > maxPointIdNum) maxPointIdNum = idNum;
+            });
+            pointIdCounter = maxPointIdNum; 
+            console.log(`Finished processing points. Total points loaded: ${points.length}. Next Point ID will be p${pointIdCounter + 1}`);
+
+            // Process Alignments
+            console.log("Processing alignments from CSV...");
+            alignmentRowsData.forEach(aData => {
+                const id = aData.ID;
+                console.log(`Attempting to process Alignment ID from CSV: ${id}, Raw Point IDs string: "${aData.AlignmentPointIDs}"`);
+                const pointIdsFromCSV = aData.AlignmentPointIDs.split(';').map(pid => pid.trim()).filter(pid => pid !== ''); 
+                console.log(`Parsed pointIdsFromCSV for Alignment ${id}:`, pointIdsFromCSV);
+
+                const validPointsForAlignment = pointIdsFromCSV.map(pid => {
+                    const foundPoint = points.find(p => p.id === pid);
+                    if (!foundPoint) {
+                        console.warn(`For Alignment ${id}, Point ID "${pid}" not found in loaded points array.`);
+                    }
+                    return foundPoint;
+                }).filter(Boolean); 
+
+                console.log(`For Alignment ${id}: Found ${validPointsForAlignment.length} valid points out of ${pointIdsFromCSV.length} expected.`);
+
+                if (validPointsForAlignment.length < 2 || validPointsForAlignment.length !== pointIdsFromCSV.length) {
+                    console.warn(`Skipping alignment ID ${id} due to missing, mismatched, or insufficient points. Valid points found: ${validPointsForAlignment.map(p=>p.id).join(', ')}`);
+                    return; 
+                }
+                
+                const latLngs = validPointsForAlignment.map(p => [p.lat, p.lng]);
+                
+                const loadedAlignmentIdNum = parseInt(id.substring(1)); 
+                const colorIndex = (loadedAlignmentIdNum -1) % alignmentColors.length;
+                const chosenColor = alignmentColors[colorIndex];
+
+                const polyline = L.polyline(latLngs, { color: chosenColor }).addTo(map);
+                alignments.push({ id, pointIds: pointIdsFromCSV, polyline, color: chosenColor }); 
+                console.log(`Successfully added Alignment ${id} to map and data with color ${chosenColor}.`);
+                
+                 if (!isNaN(loadedAlignmentIdNum) && loadedAlignmentIdNum > maxAlignmentIdNum) maxAlignmentIdNum = loadedAlignmentIdNum;
+            });
+            alignmentIdCounter = maxAlignmentIdNum; 
+            console.log(`Finished processing alignments. Total alignments loaded: ${alignments.length}. Next Alignment ID will be a${alignmentIdCounter + 1}`);
+
+            renderPointsList();
+
+            if (points.length > 0) {
+                const allLoadedLatLngs = points.map(p => [p.lat, p.lng]);
+                if (allLoadedLatLngs.length > 0) {
+                    map.fitBounds(allLoadedLatLngs, { padding: [50, 50], maxZoom: 15 });
+                }
+            } else {
+                map.setView([20, 0], 2); 
+            }
+            console.log("CSV processing complete.");
+        }
+
+
+        // --- Modal Functionality (Edit Point) ---
+        function openEditModal(pointId) {
+            const point = points.find(p => p.id === pointId);
+            if (!point) return;
+
+            editPointIdInput.value = point.id;
+            editLatInput.value = point.lat;
+            editLngInput.value = point.lng;
+            editElevationInput.value = point.elevation !== undefined ? point.elevation : ''; 
+            editNoteInput.value = point.note || '';
+            editPhotoInput.value = ''; 
+            
+            if (point.photoDataUrl) {
+                currentPhotoPreview.src = point.photoDataUrl;
+                currentPhotoPreview.classList.remove('hidden');
+                currentPhotoPreview.alt = point.photoFileName || "Current Photo";
+            } else {
+                currentPhotoPreview.classList.add('hidden');
+                currentPhotoPreview.src = "#";
+            }
+
+            editPointModal.style.display = 'flex';
+        }
+
+        closeModalBtn.addEventListener('click', () => {
+            editPointModal.style.display = 'none';
+        });
+        cancelEditBtn.addEventListener('click', () => {
+            editPointModal.style.display = 'none';
+        });
+
+        saveEditBtn.addEventListener('click', () => {
+            const pointId = editPointIdInput.value;
+            const pointIndex = points.findIndex(p => p.id === pointId);
+            if (pointIndex === -1) return;
+
+            const newLat = parseFloat(editLatInput.value);
+            const newLng = parseFloat(editLngInput.value);
+            const newElevation = parseFloat(editElevationInput.value) || 0; 
+            const newNote = editNoteInput.value.trim();
+            const newPhotoFile = editPhotoInput.files[0];
+
+            if (isNaN(newLat) || isNaN(newLng)) {
+                alert('Please enter valid latitude and longitude in the edit modal.'); 
+                return;
+            }
+
+            const pointToUpdate = points[pointIndex];
+            const oldLat = pointToUpdate.lat;
+            const oldLng = pointToUpdate.lng;
+
+            pointToUpdate.lat = newLat;
+            pointToUpdate.lng = newLng;
+            pointToUpdate.elevation = newElevation; 
+            pointToUpdate.note = newNote;
+
+            // Update marker icon based on new note/photo status
+            const hasNoteOrPhotoNow = (pointToUpdate.note && pointToUpdate.note.trim() !== '') || (newPhotoFile || pointToUpdate.photoDataUrl); // Check new file or existing photo
+            const newIconType = hasNoteOrPhotoNow ? 'green' : 'default';
+
+            if (pointToUpdate.iconType !== newIconType) {
+                pointToUpdate.marker.setIcon(hasNoteOrPhotoNow ? greenIcon : defaultIcon);
+                pointToUpdate.iconType = newIconType;
+            }
+            
+            pointToUpdate.marker.setLatLng([newLat, newLng]); // Update position if changed
+            
+            const updatePopupAndList = () => {
+                let popupContent = `<b>Point ${pointToUpdate.id}</b><br>Lat: ${pointToUpdate.lat.toFixed(4)}, Lng: ${pointToUpdate.lng.toFixed(4)}, Elev: ${pointToUpdate.elevation}m`;
+                if (pointToUpdate.note) popupContent += `<br>Note: ${pointToUpdate.note.substring(0,50)}${pointToUpdate.note.length > 50 ? '...' : ''}`;
+                if (pointToUpdate.photoDataUrl) popupContent += `<br><img src="${pointToUpdate.photoDataUrl}" alt="${pointToUpdate.photoFileName || 'Photo'}" style="max-width:100px; max-height:100px; margin-top:5px;">`;
+                pointToUpdate.marker.setPopupContent(popupContent);
+
+                if (oldLat !== newLat || oldLng !== newLng) { 
+                    alignments.forEach(align => {
+                        if (align.pointIds.includes(pointId)) {
+                            if (align.polyline) map.removeLayer(align.polyline); 
+                            const latLngs = align.pointIds.map(pid => {
+                                const p = points.find(currP => currP.id === pid);
+                                return [p.lat, p.lng];
+                            });
+                            const lineColor = align.color || alignmentColors[0]; 
+                            align.polyline = L.polyline(latLngs, { color: lineColor }).addTo(map); 
+                        }
+                    });
+                }
+                renderPointsList(); 
+                editPointModal.style.display = 'none';
+                searchStatus.textContent = `Point ${pointId} updated.`;
+                searchStatus.className = 'text-xs text-green-600 mb-2';
+            };
+
+            if (newPhotoFile) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    pointToUpdate.photoDataUrl = e.target.result;
+                    pointToUpdate.photoFileName = newPhotoFile.name;
+                    // Re-check icon type after photo is processed
+                    const hasNoteOrPhotoAfterPhotoLoad = (pointToUpdate.note && pointToUpdate.note.trim() !== '') || pointToUpdate.photoDataUrl;
+                    const newIconTypeAfterPhotoLoad = hasNoteOrPhotoAfterPhotoLoad ? 'green' : 'default';
+                    if (pointToUpdate.iconType !== newIconTypeAfterPhotoLoad) {
+                        pointToUpdate.marker.setIcon(hasNoteOrPhotoAfterPhotoLoad ? greenIcon : defaultIcon);
+                        pointToUpdate.iconType = newIconTypeAfterPhotoLoad;
+                    }
+                    updatePopupAndList();
+                };
+                reader.readAsDataURL(newPhotoFile);
+            } else {
+                 // If no new photo, but note might have changed, ensure icon is correct
+                const hasNoteOrPhotoFinal = (pointToUpdate.note && pointToUpdate.note.trim() !== '') || pointToUpdate.photoDataUrl;
+                const newIconTypeFinal = hasNoteOrPhotoFinal ? 'green' : 'default';
+                 if (pointToUpdate.iconType !== newIconTypeFinal) {
+                    pointToUpdate.marker.setIcon(hasNoteOrPhotoFinal ? greenIcon : defaultIcon);
+                    pointToUpdate.iconType = newIconTypeFinal;
+                }
+                updatePopupAndList();
+            }
+        });
+        
+        // --- Modal Functionality (Show All Points) ---
+        showAllPointsBtn.addEventListener('click', () => {
+            allPointsModalContent.innerHTML = ''; 
+
+            if (points.length === 0) {
+                allPointsModalContent.innerHTML = '<p class="text-gray-600">No points have been added yet.</p>';
+            } else {
+                points.forEach(point => {
+                    const pointDetailDiv = document.createElement('div');
+                    pointDetailDiv.className = 'point-detail-item p-4 border border-gray-300 rounded-lg shadow-sm';
+                    
+                    let content = `
+                        <h4 class="text-lg font-semibold text-blue-600">Point ID: ${point.id}</h4>
+                        <p class="text-sm text-gray-700 mt-1"><b>Latitude:</b> ${point.lat.toFixed(6)}</p>
+                        <p class="text-sm text-gray-700"><b>Longitude:</b> ${point.lng.toFixed(6)}</p>
+                        <p class="text-sm text-gray-700"><b>Elevation:</b> ${point.elevation !== undefined ? point.elevation : 'N/A'} m</p> 
+                    `;
+                    if (point.note) {
+                        content += `<p class="text-sm text-gray-700 mt-2"><b>Note:</b></p><p class="text-sm text-gray-600 whitespace-pre-wrap p-2 bg-gray-50 rounded">${point.note}</p>`;
+                    } else {
+                        content += `<p class="text-sm text-gray-500 mt-2"><i>No note for this point.</i></p>`;
+                    }
+                    if (point.photoDataUrl) {
+                        content += `<p class="text-sm text-gray-700 mt-2"><b>Photo:</b> ${point.photoFileName ? `(${point.photoFileName})` : ''}</p>`;
+                        content += `<img src="${point.photoDataUrl}" alt="${point.photoFileName || 'Uploaded Photo'}" class="all-points-photo">`;
+                    } else {
+                         content += `<p class="text-sm text-gray-500 mt-2"><i>No photo for this point.</i></p>`;
+                    }
+                    pointDetailDiv.innerHTML = content;
+                    allPointsModalContent.appendChild(pointDetailDiv);
+                });
+            }
+            allPointsModal.style.display = 'flex';
+        });
+
+        closeAllPointsModalBtn.addEventListener('click', () => {
+            allPointsModal.style.display = 'none';
+        });
+
+        window.addEventListener('click', (event) => { 
+            if (event.target == editPointModal) {
+                editPointModal.style.display = 'none';
+            }
+            if (event.target == allPointsModal) {
+                allPointsModal.style.display = 'none';
+            }
+        });
+
+
+        // --- Initialize ---
+        document.addEventListener('DOMContentLoaded', () => {
+            initMap();
+            renderPointsList(); 
+        });
+
+    </script>
+
+</body>
+</html>
