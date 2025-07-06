@@ -824,7 +824,7 @@
 
             alignments.forEach(alignment => {
                 const pointIdsString = alignment.pointIds.join(';'); 
-                let row = `Alignment,${alignment.id},,,,,,,,"${pointIdsString}"\r\n`; 
+                let row = `Alignment,${alignment.id},,,,,,,"${pointIdsString}"\r\n`; 
                 csvContent += row;
             });
 
